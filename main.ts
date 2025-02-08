@@ -2,7 +2,6 @@
 //% color="#ff6e59"
 namespace particle{
 //% block
-//% image2=screen_image_picker
 export function spawnParticle (x: number, y: number, vx: number, vy: number, lifetime: number, image2: Image, ax: number, ay: number) {
     particles2.push([
     x,
