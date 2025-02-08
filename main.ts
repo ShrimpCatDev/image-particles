@@ -1,7 +1,7 @@
 //% color="#ff7d59"
 
 namespace particles{
-//% block
+//% block="add particle x $x y $y vx $vx vy $vy lifetime $lifetime image $image2 ax $ax ay $ay"
 //% image2.shadow=screen_image_picker
 //% inlineInputMode=inline
 export function addParticle (x: number, y: number, vx: number, vy: number, lifetime: number, image2: Image, ax: number, ay: number) {
