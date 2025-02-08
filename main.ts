@@ -17,12 +17,18 @@ export function addParticle (x: number, y: number, vx: number, vy: number, lifet
     ])
     particleImages.push(image2)
 }
+//block="set particles Z index $ind"
+export function setParticleZ(ind: number) {
+    zInd=ind
 }
-spriteutils.createRenderable(9001, function (screen2) {
+}
+let zInd = 9000
+spriteutils.createRenderable(zInd, function (screen2) {
     for (let value of particles2) {
         spriteutils.drawTransparentImage(particleImages[value[5]], screen2, value[0], value[1])
     }
 })
+
 let particleImages: Image[] = []
 let particles2: number[][] = []
 particles2 = []
