@@ -1,5 +1,6 @@
 
-//% color="#ff6e59"
+//% color="#ff7d59"
+
 namespace particle{
 //% block "spawn particle x $x y $y vx $vx vy $vy lifetime $lifetime image $image2 ax $ax ay $ay"
 
