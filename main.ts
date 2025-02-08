@@ -2,8 +2,9 @@
 //% color="#ff7d59"
 
 namespace particle{
+//% block
 //% block "spawn particle x $x y $y vx $vx vy $vy lifetime $lifetime image $image2 ax $ax ay $ay"
-
+//% image2.shadow=screen_image_picker
 export function spawnParticle (x: number, y: number, vx: number, vy: number, lifetime: number, image2: Image, ax: number, ay: number) {
     particles2.push([
     x,
