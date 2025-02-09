@@ -44,7 +44,4 @@ game.onUpdate(function () {
             particles2.removeAt(particles2.indexOf(value))
         }
     }
-    if (particles2.length < 1) {
-        particleImages = []
-    }
 })
