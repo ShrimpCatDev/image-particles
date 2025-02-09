@@ -25,7 +25,7 @@ export function setParticleZ(ind: number) {
 let zInd = 9000
 spriteutils.createRenderable(zInd, function (screen2) {
     for (let value of particles2) {
-        spriteutils.drawTransparentImage(particleImages[value[5]], screen2, value[0] - scene.cameraProperty(CameraProperty.X), value[1] - scene.cameraProperty(CameraProperty.Y))
+        spriteutils.drawTransparentImage(particleImages[value[5]], screen2, value[0] - scene.cameraProperty(CameraProperty.Left), value[1] - scene.cameraProperty(CameraProperty.Top))
     }
 })
 
