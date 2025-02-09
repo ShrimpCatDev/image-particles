@@ -17,7 +17,7 @@ export function addParticle (x: number, y: number, vx: number, vy: number, lifet
     ])
     particleImages.push(image2)
 }
-//block="set particles Z index $ind"
+//block="set particles Z index"
 export function setParticleZ(ind: number) {
     zInd=ind
 }
@@ -25,7 +25,7 @@ export function setParticleZ(ind: number) {
 let zInd = 9000
 spriteutils.createRenderable(zInd, function (screen2) {
     for (let value of particles2) {
-        spriteutils.drawTransparentImage(particleImages[value[5]], screen2, value[0], value[1])
+        spriteutils.drawTransparentImage(particleImages[value[5]], screen2, value[0] - scene.cameraProperty(CameraProperty.X), value[1] - scene.cameraProperty(CameraProperty.Y))
     }
 })
 
